@@ -1,0 +1,16 @@
+<h1>Frase de la vida <small>Horizonte</small></h1>
+<hr>
+<div class="card-columns">
+
+    <div class="card animated fadein fast" *ngFor="let Frase of frase; let i = index" >
+        <img class="card-img-top img-fluid" [src]="Frase.img" class="card-img-top" [alt]="Frase.title">
+        <div class="card-block" >
+          <h4 class="card-title">{{Frase.title}}</h4>
+          <p class="card-text">{{Frase.text}}</p>
+          <p class="card-text"><small class="text-muted">{{Frase.description}}</small></p>
+        </div>
+        
+      
+     
+
+</div>
